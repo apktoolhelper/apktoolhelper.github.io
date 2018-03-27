@@ -1,0 +1,93 @@
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>错误</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/mdui/0.4.0/css/mdui.min.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" media="screen,projection"/>
+	<link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/vue-material.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/theme/default.css"/>
+  </head>
+  <body class="mdui-theme-accent-blue" ontouchstart="gtouchstart()" ontouchmove="gtouchmove()" ontouchend="gtouchend()">
+<style type="text/css">
+        * {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+</style>
+
+	<div class="mdui-center mdui-text-center">
+	  <h4 class="mdui-text-color-red"><i class="mdui-icon material-icons">error</i>错误</h4>
+	  <p id="istext" class="mdui-text-color-black">建议使用外部浏览器打开</p>
+	  <small class="mdui-text-color-grey" style="position:absolute;bottom:0px;left:0px;right:0px;margin:10px">Copyright ©1999-2018 DOFS All Rights Reserved</small>
+	</div>
+
+	<script type="text/javascript" src="https://cdn.bootcss.com/mdui/0.4.0/js/mdui.min.js"/>
+	<script type="text/javascript" src="https://code.getmdl.io/1.3.0/material.min.js"/>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"/>
+	<script type="text/javascript" src="http://framework7.io/dist/js/framework7.min.js"/>
+	<script type="text/javascript" src="https://unpkg.com/vue@2.5.16/dist/vue.js"/>
+    <script type="text/javascript" src="https://unpkg.com/vue-material@1.0.0-beta-7/dist/vue-material.min.js"/>
+<script type="text/javascript">
+var timeOutEvent=0;
+function gtouchstart() {   
+    timeOutEvent = setTimeout("longPress()", 500);
+    return false;   
+};   
+function gtouchend() {   
+    clearTimeout(timeOutEvent);
+    if (timeOutEvent != 0)
+	{   
+    }   
+    return false;   
+};   
+function gtouchmove() {   
+    clearTimeout(timeOutEvent);
+    timeOutEvent = 0;   
+};      
+function longPress() {   
+    timeOutEvent = 0;   
+    event.preventDefault();
+	return false;  
+}   
+window.ontouchstart = function(e) { e.preventDefault(); };
+</script>
+<script>
+var ua = navigator.userAgent;
+if (ua.indexOf('Windows') != -1 && ua.indexOf('Mobile') == -1)
+{
+	document.getElementById("istext").innerText="请使用手机浏览器打开";
+}
+else if (ua.indexOf('Windows') != -1 && ua.indexOf('Mobile') == -1 && ua.indexOf('MQQBrowser') != -1)
+{
+	document.getElementById("istext").innerText="请切换手机浏览标识访问";
+}
+else if (ua.indexOf('Windows') != -1 && ua.indexOf('Mobile') == -1 && ua.indexOf('UCBrowser') != -1)
+{
+	document.getElementById("istext").innerText="请切换手机浏览标识访问";
+}
+else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') == -1 && ua.indexOf('X11') != -1)
+{
+	document.getElementById("istext").innerText="请使用手机浏览器打开";
+}
+else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf('Mac OS') != -1)
+{
+	document.getElementById("istext").innerText="请使用安卓浏览器访问";
+}
+else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf('MQQBrowser') != -1 && ua.indexOf('TBS') != -1)
+{
+	document.getElementById("istext").innerText="请使用系统浏览器打开";
+}
+else
+{
+    window.location.href = 'https://dreamflyingstudio.github.io';
+};
+</script>
+  </body>
+</html>
