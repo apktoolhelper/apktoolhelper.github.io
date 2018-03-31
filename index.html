@@ -9,40 +9,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" media="screen,projection">
-<script type="text/javascript">
-var ua = navigator.userAgent;
-if (ua.indexOf('Windows') != -1 && ua.indexOf('Mobile') == -1)
-{
-	document.title = '请使用浏览器打开';
-	window.location.href = '/error.html';
-}
-else if (ua.indexOf('Windows') != -1 && ua.indexOf('Mobile') == -1 && ua.indexOf('MQQBrowser') != -1)
-{
-	document.title = '请使用浏览器打开';
-	window.location.href = '/error.html';
-}
-else if (ua.indexOf('Windows') != -1 && ua.indexOf('Mobile') == -1 && ua.indexOf('UCBrowser') != -1)
-{
-	document.title = '请使用浏览器打开';
-	window.location.href = '/error.html';
-}
-else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') == -1 && ua.indexOf('X11') != -1)
-{
-	document.title = '请使用浏览器打开';
-	window.location.href = '/error.html';
-}
-else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf('Mac OS') != -1)
-{
-	document.title = '请使用浏览器打开';
-	window.location.href = '/error.html';
-}
-else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf('MQQBrowser') != -1 && ua.indexOf('TBS') != -1)
-{
-
-};
-</script>
   </head>
-  <body class="mdui-appbar-with-toolbar mdui-appbar-with-tab mdui-drawer-body-lef mdui-theme-accent-blue" ontouchstart="gtouchstart()" ontouchmove="gtouchmove()" ontouchend="gtouchend()">
+  <body id="Body" class="mdui-appbar-with-toolbar mdui-appbar-with-tab mdui-drawer-body-lef mdui-theme-accent-blue" ontouchstart="gtouchstart()" ontouchmove="gtouchmove()" ontouchend="gtouchend()">
 <style type="text/css">
         * {
             -webkit-touch-callout: none;
@@ -1010,13 +978,85 @@ else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf
 	  </div>
 
 	</div>
-
+	<footer class="page-footer col s12 blue" id="container_foot">
+	  <div class="container">
+		<div class="row">
+		  <div class="col l6 s12">
+			<h5 class="white-text"><i class="mdui-icon material-icons">error</i>版权声明</h5>
+			<p class="grey-text text-lighten-4">本站内所有教程均为网络收集或网友提供，所有后续一切违规行为均有内容提供者承担。</p>
+		  </div>
+		  <div class="col l4 offset-l2 s12">
+			<h5 class="white-text">友情链接</h5>
+			<ul>
+			  <a class="grey-text text-lighten-3" mdui-tooltip="{content: 'ApkTool+助手官方网站', position: 'auto'}" href="http://app.formatfa.top">
+				<div class="mdui-chip mdui-color-blue-700 mdui-ripple">
+				  <img class="mdui-chip-icon" src="http://shp.qpic.cn/collector/3489730632/c99014bc-d6df-4182-8d9d-84dfb533f7f0/0"/>
+				  <span class="mdui-chip-title">KPA助手官网1</span>
+				</div>
+			  </a>
+			  <a class="grey-text text-lighten-3" mdui-tooltip="{content: 'ApkTool+助手官方网站', position: 'auto'}" href="http://api.formatfa.top">
+				<div class="mdui-chip mdui-color-blue-700 mdui-ripple">
+				  <img class="mdui-chip-icon" src="http://shp.qpic.cn/collector/3489730632/c99014bc-d6df-4182-8d9d-84dfb533f7f0/0"/>
+				  <span class="mdui-chip-title">KPA助手官网2</span>
+				</div>
+			  </a>
+			  <a class="grey-text text-lighten-3" mdui-tooltip="{content: '申请友链', position: 'auto'}" href="javascript:joinQQ(3489730632);">
+				<div class="mdui-chip mdui-color-blue-700 mdui-ripple">
+				  <span class="mdui-chip-icon mdui-color-white"><i class="mdui-icon material-icons mdui-color-white">add</i>i></span>
+				  <span class="mdui-chip-title">申请友链</span>
+				</div>
+			  </a>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <div class="footer-copyright mdui-ripple">
+		<div class="container">Copyright ©1999-2018 DOFS All Rights Reserved</div>
+	  </div>
+	</footer>
 	<script type="text/javascript" src="https://cdn.bootcss.com/mdui/0.4.0/js/mdui.min.js"></script>
 	<script type="text/javascript" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
 
 <script type="text/javascript">
+var ua = navigator.userAgent;
+if (ua.indexOf('Windows') != -1 && ua.indexOf('Mobile') == -1)
+{
+	document.body.innerHTML="";
+	document.title = '错误';
+	document.write("<div class='mdui-center mdui-text-center'><h5 class='mdui-text-color-red'><i class='mdui-icon material-icons'>error</i>错误</h5><p id='istext' class='mdui-text-color-black'>请使用手机浏览器打开</p><small class='mdui-text-color-grey' style='position:absolute;bottom:0px;left:0px;right:0px;margin:10px'>Copyright ©1999-2018 DOFS All Rights Reserved</small></div>")
+}
+else if (ua.indexOf('Windows') != -1 && ua.indexOf('Mobile') == -1 && ua.indexOf('MQQBrowser') != -1)
+{
+	document.body.innerHTML="";
+	document.title = '错误';
+	document.write("<div class='mdui-center mdui-text-center'><h5 class='mdui-text-color-red'><i class='mdui-icon material-icons'>error</i>错误</h5><p id='istext' class='mdui-text-color-black'>请切换手机浏览标识访问</p><small class='mdui-text-color-grey' style='position:absolute;bottom:0px;left:0px;right:0px;margin:10px'>Copyright ©1999-2018 DOFS All Rights Reserved</small></div>")
+}
+else if (ua.indexOf('Windows') != -1 && ua.indexOf('Mobile') == -1 && ua.indexOf('UCBrowser') != -1)
+{
+	document.body.innerHTML="";
+	document.title = '错误';
+	document.write("<div class='mdui-center mdui-text-center'><h5 class='mdui-text-color-red'><i class='mdui-icon material-icons'>error</i>错误</h5><p id='istext' class='mdui-text-color-black'>请切换手机浏览标识访问</p><small class='mdui-text-color-grey' style='position:absolute;bottom:0px;left:0px;right:0px;margin:10px'>Copyright ©1999-2018 DOFS All Rights Reserved</small></div>")
+}
+else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') == -1 && ua.indexOf('X11') != -1)
+{
+	document.body.innerHTML="";
+	document.title = '错误';
+	document.write("<div class='mdui-center mdui-text-center'><h5 class='mdui-text-color-red'><i class='mdui-icon material-icons'>error</i>错误</h5><p id='istext' class='mdui-text-color-black'>请使用手机浏览器打开</p><small class='mdui-text-color-grey' style='position:absolute;bottom:0px;left:0px;right:0px;margin:10px'>Copyright ©1999-2018 DOFS All Rights Reserved</small></div>")
+}
+else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf('Mac OS') != -1)
+{
+	document.body.innerHTML="";
+	document.title = '错误';
+	document.write("<div class='mdui-center mdui-text-center'><h5 class='mdui-text-color-red'><i class='mdui-icon material-icons'>error</i>错误</h5><p id='istext' class='mdui-text-color-black'>请使用安卓浏览器访问</p><small class='mdui-text-color-grey' style='position:absolute;bottom:0px;left:0px;right:0px;margin:10px'>Copyright ©1999-2018 DOFS All Rights Reserved</small></div>")
+}
+else if (ua.indexOf('Windows') == -1 && ua.indexOf('Mobile') != -1 && ua.indexOf('MQQBrowser') != -1 && ua.indexOf('TBS') != -1)
+{
+	//document.body.innerHTML="";
+	//document.title = '错误';
+	//document.write("<div class='mdui-center mdui-text-center'><h5 class='mdui-text-color-red'><i class='mdui-icon material-icons'>error</i>错误</h5><p id='istext' class='mdui-text-color-black'>请使用系统浏览器打开</p><small class='mdui-text-color-grey' style='position:absolute;bottom:0px;left:0px;right:0px;margin:10px'>Copyright ©1999-2018 DOFS All Rights Reserved</small></div>")
+};
 var timeOutEvent=0;
 function gtouchstart() {   
     timeOutEvent = setTimeout("longPress()", 500);
@@ -1220,41 +1260,5 @@ function Base64() {
 	};
 };
 </script>
-	<footer class="page-footer col s12 blue" id="container_foot">
-	  <div class="container">
-		<div class="row">
-		  <div class="col l6 s12">
-			<h5 class="white-text"><i class="mdui-icon material-icons">error</i>版权声明</h5>
-			<p class="grey-text text-lighten-4">本站内所有教程均为网络收集或网友提供，所有后续一切违规行为均有内容提供者承担。</p>
-		  </div>
-		  <div class="col l4 offset-l2 s12">
-			<h5 class="white-text">友情链接</h5>
-			<ul>
-			  <a class="grey-text text-lighten-3" mdui-tooltip="{content: 'ApkTool+助手官方网站', position: 'auto'}" href="http://app.formatfa.top">
-				<div class="mdui-chip mdui-color-blue-700 mdui-ripple">
-				  <img class="mdui-chip-icon" src="http://shp.qpic.cn/collector/3489730632/c99014bc-d6df-4182-8d9d-84dfb533f7f0/0"/>
-				  <span class="mdui-chip-title">KPA助手官网1</span>
-				</div>
-			  </a>
-			  <a class="grey-text text-lighten-3" mdui-tooltip="{content: 'ApkTool+助手官方网站', position: 'auto'}" href="http://api.formatfa.top">
-				<div class="mdui-chip mdui-color-blue-700 mdui-ripple">
-				  <img class="mdui-chip-icon" src="http://shp.qpic.cn/collector/3489730632/c99014bc-d6df-4182-8d9d-84dfb533f7f0/0"/>
-				  <span class="mdui-chip-title">KPA助手官网2</span>
-				</div>
-			  </a>
-			  <a class="grey-text text-lighten-3" mdui-tooltip="{content: '申请友链', position: 'auto'}" href="javascript:joinQQ(3489730632);">
-				<div class="mdui-chip mdui-color-blue-700 mdui-ripple">
-				  <span class="mdui-chip-icon mdui-color-white"><i class="mdui-icon material-icons mdui-color-white">add</i>i></span>
-				  <span class="mdui-chip-title">申请友链</span>
-				</div>
-			  </a>
-			</ul>
-		  </div>
-		</div>
-	  </div>
-	  <div class="footer-copyright mdui-ripple">
-		<div class="container">Copyright ©1999-2018 DOFS All Rights Reserved</div>
-	  </div>
-	</footer>
   </body>
 </html>
