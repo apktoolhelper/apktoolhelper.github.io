@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" media="screen,projection">
+
   </head>
   <body id="Body" class="mdui-appbar-with-toolbar mdui-appbar-with-tab mdui-drawer-body-lef mdui-theme-accent-blue" ontouchstart="gtouchstart()" ontouchmove="gtouchmove()" ontouchend="gtouchend()">
 <style type="text/css">
@@ -61,7 +62,7 @@
 		  <div class="mdui-card-primary-title mdui-text-color-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;教程征集</div>
 		  <div class="mdui-card-primary-subtitle mdui-text-color-white">如果你有相关教程请点击右面的＋号哦～</div>
 		  <div class="mdl-card__menu">
-			<a href="javascript:var parent=document.getElementById('tabbar_button_1'); var child=document.getElementById('gonggaolan'); parent.removeChild(child);">
+			<a href="javascript:var parent=document.getElementById('tabbar_button_1'); var br=document.getElementById('gengxinlan_br'); var child=document.getElementById('gonggaolan'); parent.removeChild(br); parent.removeChild(child);">
 			  <button mdui-tooltip="{content: '关闭', position: 'auto'}" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
 				<i class="mdui-icon material-icons mdui-text-color-white">cancel</i>
 			  </button>
@@ -70,18 +71,18 @@
 		  </div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <button class="mdui-fab mdui-ripple mdui-color-light-blue-a700" style="position: absolute;top:120;right:20" mdui-tooltip="{content: '投稿教程', position: 'auto'}" onclick="javascript:joinQQ(3489730632);"><i class="mdui-icon material-icons">edit</i></button>
-		  <div class="mdl-card__supporting-text mdui-text-color-black"><font size="4" color="black">【投稿要求】</font><br><br>1.建议使用文本和图片的内容格式；<br/>2.仅支持投稿不违规和谐的教程资料；<br/>3.请不要投稿破解类关于助手植入的操作；<br/>4.教程不建议使用视频格式，大小限制在1000MB以内；</div>
+		  <div class="mdl-card__supporting-text mdui-text-color-black"><font size="4" color="black">【投稿要求】</font><br/><br/>1.建议使用文本和图片的内容格式；<br/>2.仅支持投稿不违规和谐的教程资料；<br/>3.请不要投稿破解类关于助手植入的操作；<br/>4.教程不建议使用视频格式，大小限制在1000MB以内；</div>
 		  <div class="mdui-card-menu">
 		  </div>
 		</div>
 	  </div>
 
-	  <br>
+	  <br id="gengxinlan_br"/>
 	  <div id="gengxinlan" class="mdui-card demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable mdui-ripple">
 		<div class="mdui-card-media">
 		  <img style="width: -1; height: -2;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1522142514569&di=98227cdc3039fb3f4570e83e636b5f1a&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01ac4a56abbca96ac7256cb0f7935e.gif"/>
 		  <div class="mdl-card__menu">
-			<a href="javascript:var parent=document.getElementById('tabbar_button_1'); var child=document.getElementById('gengxinlan'); parent.removeChild(child);">
+			<a href="javascript:var parent=document.getElementById('tabbar_button_1'); var br=document.getElementById('one_br'); var child=document.getElementById('gengxinlan'); parent.removeChild(br); parent.removeChild(child);">
 			  <button mdui-tooltip="{content: '关闭', position: 'auto'}" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
 				<i class="mdui-icon material-icons mdui-text-color-white">cancel</i>
 			  </button>
@@ -104,7 +105,7 @@
 		<div class="mdl-card__supporting-text mdui-text-color-black">更新日志：<br/>1.改了包名；<br/>2.删除大部分功能；<br/>3.列表变大；<br/>4.插件更改；<br/>5.点击Apk时，可以进行简单的检查；<br/>6.修复178列表遮住的问题。</div>
 	  </div>
 
-	  <br>
+	  <br id="one_br"/>
 	  <div class="mdui-card demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable mdui-ripple">
 		<div class="mdui-card-menu">
 		  <button class="mdui-btn mdui-btn-icon mdui-text-color-white" mdui-tooltip="{content: '分享到QQ', position: 'auto'}" onclick="javascript:goShare(setBase64(getValue('url_one', 'href')), setBase64(getValue('img_one', 'src')), setBase64(goValue('title_one')), setBase64(goValue('message_one')));"><i class="mdui-icon material-icons">share</i></button>
@@ -132,7 +133,7 @@
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">APKTool反编译插件</h2>
 		  <span class="new badge blue" data-badge-caption="v1.0"></span>
 		</div>
-		<div class="mdl-card__supporting-text">利用APKTOOL进行反编译APK回编译APK文件。<br>该插件仅适用于1.7.9及以上版本助手使用</div>
+		<div class="mdl-card__supporting-text">利用APKTOOL进行反编译APK回编译APK文件。<br/>该插件仅适用于1.7.9及以上版本助手使用</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header mdui-ripple">
 			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
@@ -149,13 +150,13 @@
 		</div>
 	  </div>
 	  
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">悬浮窗植入插件(新)</h2>
 		  <span class="new badge blue" data-badge-caption="v1.0"></span>
 		</div>
-		<div class="mdl-card__supporting-text">悬浮窗植入插件，可以像软件里植入一个悬浮窗,可自定义图片，点击事件name,悬浮窗植入。<br>该插件仅适用于1.7.9及以上版本助手使用</div>
+		<div class="mdl-card__supporting-text">悬浮窗植入插件，可以像软件里植入一个悬浮窗,可自定义图片，点击事件name,悬浮窗植入。<br/>该插件仅适用于1.7.9及以上版本助手使用</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header mdui-ripple">
 			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
@@ -172,13 +173,13 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">悬浮窗植入插件</h2>
 		  <span class="new badge blue" data-badge-caption="v1.0"></span>
 		</div>
-		<div class="mdl-card__supporting-text">悬浮窗植入插件，可以像软件里植入一个悬浮窗,可自定义图片，点击事件name,悬浮窗植入。<br>该插件仅适用于1.7.8及以下版本助手使用</div>
+		<div class="mdl-card__supporting-text">悬浮窗植入插件，可以像软件里植入一个悬浮窗,可自定义图片，点击事件name,悬浮窗植入。<br/>该插件仅适用于1.7.8及以下版本助手使用</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header mdui-ripple">
 			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
@@ -195,7 +196,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">IMEI注册机插件</h2>
@@ -218,7 +219,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">一键删除adrt插件</h2>
@@ -241,7 +242,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">DEX加密插件_火柴</h2>
@@ -264,7 +265,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">崩溃日志查看插件</h2>
@@ -287,7 +288,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">DEX混淆插件</h2>
@@ -310,7 +311,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">Unity3D提取插件</h2>
@@ -333,7 +334,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">压缩包查看插件</h2>
@@ -356,7 +357,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">ODEX回编译插件</h2>
@@ -379,7 +380,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">去签名验证插件</h2>
@@ -402,7 +403,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">OTA提取Dex插件</h2>
@@ -425,7 +426,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">格基桌面插件</h2>
@@ -448,7 +449,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">吃鸡除草挂插件</h2>
@@ -471,7 +472,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">XML反编译插件</h2>
@@ -494,7 +495,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">SO编辑插件</h2>
@@ -517,7 +518,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">文件操作测试插件</h2>
@@ -540,7 +541,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">Base64加解密插件</h2>
@@ -563,7 +564,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">颜色值转换插件</h2>
@@ -586,7 +587,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">广告助手插件</h2>
@@ -609,7 +610,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">伪360加固插件</h2>
@@ -632,7 +633,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">伪梆梆加固插件</h2>
@@ -655,7 +656,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">微云系列插件</h2>
@@ -678,13 +679,13 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">格格加固插件(新)</h2>
 		  <span class="new badge blue" data-badge-caption="v1.1"></span>
 		</div>
-		<div class="mdl-card__supporting-text">用来给Apk加固的一款插件。<br>该插件仅适用于1.7.9及以上版本助手使用</div>
+		<div class="mdl-card__supporting-text">用来给Apk加固的一款插件。<br/>该插件仅适用于1.7.9及以上版本助手使用</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header mdui-ripple">
 			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
@@ -701,13 +702,13 @@
 		</div>
 	  </div>
 	  
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">格格加固插件</h2>
 		  <span class="new badge blue" data-badge-caption="v1.0"></span>
 		</div>
-		<div class="mdl-card__supporting-text">用来给Apk加固的一款插件。<br>该插件仅适用于1.7.8及以下版本助手使用</div>
+		<div class="mdl-card__supporting-text">用来给Apk加固的一款插件。<br/>该插件仅适用于1.7.8及以下版本助手使用</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header mdui-ripple">
 			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
@@ -724,7 +725,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">彩色Toast插件</h2>
@@ -747,7 +748,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">TS提示框插件</h2>
@@ -770,13 +771,13 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">DEX分解插件</h2>
 		  <span class="new badge blue" data-badge-caption="v1.0"></span>
 		</div>
-		<div class="mdl-card__supporting-text">将dex拆成多个dex。<br>该插件仅适用于1.7.9及以上版本助手使用</div>
+		<div class="mdl-card__supporting-text">将dex拆成多个dex。<br/>该插件仅适用于1.7.9及以上版本助手使用</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header mdui-ripple">
 			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
@@ -793,7 +794,7 @@
 		</div>
 	  </div>
 	  
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">DEX合并插件</h2>
@@ -816,13 +817,13 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">自定义签名插件(新)</h2>
 		  <span class="new badge blue" data-badge-caption="v1.1"></span>
 		</div>
-		<div class="mdl-card__supporting-text">可以给植入完后的APK安装包进行签名安装。<br>该插件仅适用于1.7.9及以上版本助手使用</div>
+		<div class="mdl-card__supporting-text">可以给植入完后的APK安装包进行签名安装。<br/>该插件仅适用于1.7.9及以上版本助手使用</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header mdui-ripple">
 			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
@@ -839,13 +840,13 @@
 		</div>
 	  </div>
 	  
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">自定义签名插件</h2>
 		  <span class="new badge blue" data-badge-caption="v1.1"></span>
 		</div>
-		<div class="mdl-card__supporting-text">可以给植入完后的APK安装包进行签名安装。<br>该插件仅适用于1.7.8及以下版本助手使用</div>
+		<div class="mdl-card__supporting-text">可以给植入完后的APK安装包进行签名安装。<br/>该插件仅适用于1.7.8及以下版本助手使用</div>
 		<div class="mdl-card__actions mdl-card--border">
 		  <div class="mdui-card-header mdui-ripple">
 			<img mdui-tooltip="{content: '联系作者', position: 'auto'}" onclick="javascript:joinQQ(1758759399);" class="mdui-card-header-avatar" src="http://q.qlogo.cn/headimg_dl?dst_uin=1758759399&spec=640&img_type=jpg"/>
@@ -862,7 +863,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">Bmob注册机插件</h2>
@@ -885,7 +886,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">十字列表游戏</h2>
@@ -908,7 +909,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">DEX加密插件</h2>
@@ -931,7 +932,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">彩色TAOST插件二代</h2>
@@ -954,7 +955,7 @@
 		</div>
 	  </div>
 
-	  <br>
+	  <br/>
 	  <div class="demo-card-wide mdl-card mdl-shadow--2dp mdui-hoverable">
 		<div class="mdl-card__title">
 		  <h2 class="mdl-card__title-text mdui-text-color-light-blue" style="font-weight: 500;">分享三次插件</h2>
@@ -1014,6 +1015,7 @@
 		<div class="container">Copyright ©1999-2018 DOFS All Rights Reserved</div>
 	  </div>
 	</footer>
+	
 	<script type="text/javascript" src="https://cdn.bootcss.com/mdui/0.4.0/js/mdui.min.js"></script>
 	<script type="text/javascript" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -1023,9 +1025,9 @@
 var ua = navigator.userAgent;
 if (ua.indexOf('Windows') != -1 && ua.indexOf('Mobile') == -1)
 {
-	document.body.innerHTML="";
-	document.title = '错误';
-	document.write("<div class='mdui-center mdui-text-center'><h5 class='mdui-text-color-red'><i class='mdui-icon material-icons'>error</i>错误</h5><p id='istext' class='mdui-text-color-black'>请使用手机浏览器打开</p><small class='mdui-text-color-grey' style='position:absolute;bottom:0px;left:0px;right:0px;margin:10px'>Copyright ©1999-2018 DOFS All Rights Reserved</small></div>")
+	//document.body.innerHTML="";
+	//document.title = '错误';
+	//document.write("<div class='mdui-center mdui-text-center'><h5 class='mdui-text-color-red'><i class='mdui-icon material-icons'>error</i>错误</h5><p id='istext' class='mdui-text-color-black'>请使用手机浏览器打开</p><small class='mdui-text-color-grey' style='position:absolute;bottom:0px;left:0px;right:0px;margin:10px'>Copyright ©1999-2018 DOFS All Rights Reserved</small></div>")
 }
 else if (ua.indexOf('Windows') != -1 && ua.indexOf('Mobile') == -1 && ua.indexOf('MQQBrowser') != -1)
 {
